@@ -13,7 +13,6 @@ const PASSWORD_KEY = 'rememberedPassword';
 
 /**
  * Checks localStorage for saved credentials and updates the 'existing' button visibility.
- * This ensures the button persists across page reloads.
  */
 function checkExistingCredentials() {
     const savedUsername = localStorage.getItem(USERNAME_KEY);
