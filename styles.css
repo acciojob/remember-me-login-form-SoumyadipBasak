@@ -1,1 +1,57 @@
 /*  your css code here. If applicable */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+#login-form input[type="text"],
+#login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#submit, #existing {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#submit {
+    background-color: #5cb85c;
+    color: white;
+}
+
+#submit:hover {
+    background-color: #4cae4c;
+}
+
+#existing {
+    background-color: #337ab7;
+    color: white;
+}
+
+#existing:hover {
+    background-color: #286090;
+}
+
+/* Initially hide the button; JS will show it if credentials exist */
+#existing {
+    display: none; 
+}
